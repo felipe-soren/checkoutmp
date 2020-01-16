@@ -21,7 +21,6 @@ module.exports = {
         const purchaseOrder = {
             items: [
               item = {
-                id: id,
                 title: description,
                 description : description,
                 quantity: 1,
@@ -35,9 +34,9 @@ module.exports = {
             auto_return : "all",
             external_reference : id,
             back_urls : {
-              success : getFullUrl(req) + "/payments/success",
+              success : `http://localhost:3000/confirmation/${id}`,
               pending : getFullUrl(req) + "/payments/pending",
-              failure : getFullUrl(req) + "/payments/failure",
+              failure : `http://localhost:3000/`,
             }
           }
       
