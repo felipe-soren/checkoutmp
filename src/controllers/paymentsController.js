@@ -34,9 +34,9 @@ module.exports = {
             auto_return : "all",
             external_reference : id,
             back_urls : {
-              success : `https://desafiombbackend.herokuapp.com/confirmation/${id}`,
+              success : `https://mbevents.herokuapp.com/confirmation/${id}`,
               pending : getFullUrl(req) + "/payments/pending",
-              failure : `https://desafiombbackend.herokuapp.com/`,
+              failure : `https://mbevents.herokuapp.com/`,
             }
           }
       
